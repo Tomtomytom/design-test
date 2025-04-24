@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odoo – Build fast, modern, and beautiful websites.</title>
+  <!-- Basic Meta Tags -->
+  <meta name="description" content="Odoo – Build fast, modern, and beautiful websites.">
+  <meta name="author" content="Odoo">
+  <meta name="keywords" content="odoo, UI kit, website builder, bootstrap 5, responsive design, components, SaaS">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Odoo – UI Kit for modern websites">
+  <meta property="og:description"
+    content="Build a beautiful, modern website with flexible components built from scratch.">
+  <meta property="og:image" content="https://example.com/assets/images/preview.jpg">
+  <meta property="og:url" content="https://example.com">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Meta -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Odoo – UI Kit for modern websites">
+  <meta name="twitter:description"
+    content="Build a beautiful, modern website with flexible components built from scratch.">
+  <meta name="twitter:image" content="https://example.com/assets/images/preview.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/scss/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <header class="position-absolute w-100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-navbar">
+      <div class="container border-bottom border-light border-opacity-25 pb-4 py-4">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#home">
+          <img loading="lazy" src="assets/images/logos/odoo-white.svg" alt="Odoo" height="32">
+        </a>
+
+        <!-- Hamburger menu (mobile) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+          aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu collapsible -->
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <!-- navigation links centered -->
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#features-1">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#awards">Awards</a></li>
+            <li class="nav-item"><a class="nav-link" href="#features-4">Install</a></li>
+            <li class="nav-item"><a class="nav-link" href="#faq">FaQ</a></li>
+          </ul>
+
+          <!-- actions on the right -->
+          <div class="d-flex align-items-center">
+            <a href="#signin" class=" text-white me-3">Sign in</a>
+            <a href="#buy" class="btn btn-light text-dark d-flex align-items-center">
+
+              <i class="bi bi-bag me-2"></i> Buy now
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+
+  <section id="hero" class="hero">
+
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12 col-md-7">
+          <h1 class="text-white display-1 mb-3 max-w-xs">
+            Development done right
+          </h1>
+          <p class="text-white lead mb-4 max-w-md">
+            Build a beautiful, modern website with flexible components built from scratch.
+          </p>
+          <button class="btn bg-white text-dark d-flex align-items-center mb-5 px-4 py-2 rounded-2 shadow-sm">
+            Get started
+            <svg viewBox="0 0 24 24" width="20px" class="ms-2" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_iconCarrier">
+                <path opacity="0.5"
+                  d="M4 11.25C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75V11.25ZM4 12.75H20V11.25H4V12.75Z"
+                  fill="#1C274C" />
+                <path d="M14 6L20 12L14 18" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </g>
+            </svg>
+          </button>
+
+          <ul class="list-inline d-flex flex-wrap align-items-center gap-3">
+            <li class="list-inline-item text-white">Trusted by:</li>
+            <li class="list-inline-item"><img loading="lazy" src="assets/images/logos/google-white.svg" height="25" alt="Google"></li>
+            <li class="list-inline-item"><img loading="lazy" src="assets/images/logos/spotify-white.svg" height="25" alt="Spotify">
+            </li>
+            <li class="list-inline-item"><img loading="lazy" src="assets/images/logos/airbnb-white.svg" height="25" alt="Airbnb"></li>
+            <li class="list-inline-item"><img loading="lazy" src="assets/images/logos/paypal-white.svg" height="25" alt="PayPal"></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-5">
+          <div class="card-manager bg-white p-4">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <p class="fs-6 m-0 text-dark d-flex align-items-center">
+                Manage cards
+              </p>
+              <button class="fs-6 btn border-2 border-graylight text-muted">
+                Add new
+              </button>
+            </div>
+
+            <div class="card mt-3 bg-darkblue p-4 rounded-4">
+              <div class="row">
+                <div class="d-flex justify-content-between">
+                  <img loading="lazy" src="assets/images/logos/mastercard.svg" width="30px" alt="">
+                  <p class="fs-6 px-3 py-1 text-white bg-success rounded m-0">
+                    Active
+                  </p>
+                </div>
+              </div>
+              <div class="row py-4">
+                <small class="my-0 text-white text-uppercase"> Card number</small>
+                <p class="fs-2 mb-3 mt-0 text-white fw-bold">4358 - 7421 - 9256 - 6682</p>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <small class="my-0 text-white text-uppercase">Name</small>
+                  <p class="m-0 text-white fw-bold">John Snow</p>
+                </div>
+                <div class="col-6">
+                  <small class="my-0 text-white text-uppercase">Expiry date</small>
+                  <p class="m-0 text-white fw-bold">11/23</p>
+                </div>
+              </div>
+            </div>
+
+            <ul class="list-group list-group-flush pt-2">
+              <li class="list-group-item px-0 py-3 d-flex justify-content-between align-items-start">
+                <div>
+                  <div class="fw-semibold text-sm">Starbucks</div>
+                  <small class="text-muted">Pending – San Francisco, United States</small>
+                </div>
+                <div class="fw-semibold text-sm">$5.50 USD</div>
+              </li>
+              <li class="list-group-item px-0 py-3 d-flex justify-content-between align-items-start">
+                <div>
+                  <div class="fw-semibold text-sm">Nike Sports</div>
+                  <small class="text-muted">Pending – Lisbon, Portugal</small>
+                </div>
+                <div class="fw-semibold text-sm">$129.00 USD</div>
+              </li>
+              <li class="list-group-item px-0 py-3 d-flex justify-content-between align-items-start bg-transparent">
+                <small class="py-0 my-0"><a href="" class="dashed">View all <i
+                      class="bi bi-arrow-right-short"></i></a></small>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SVG -->
+
+  <svg id="header-shape" class="header-shape" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1920 187.52">
+    <defs>
+      <style>
+        .cls-1 {
+          fill: #038aff;
+        }
+      </style>
+    </defs>
+    <polyline class="cls-1" points="1920 0 1920 23.91 0 187.52 0 0" />
+  </svg>
+
+  <!-- Features 1 -->
+
+  <section id="features-1" class="features-1 container py-5">
+    <div class="row h-100 align-items-center">
+      <div class="col-12 col-md-6">
+        <div class="col-8 col-md-6 position-relative">
+          <!-- Carte en arrière-plan -->
+          <div class="position-absolute top-50 start-0 w-100 z-0">
+            <div class="card shadow rounded-4 p-4 bg-white">
+              <h5 class="mb-4">Awesome projects</h5>
+              <div class="mb-4">
+                <p class="mb-1">Create the new logo</p>
+                <div class="progress" style="height: 2px;">
+                  <div class="progress-bar bg-warning" style="width: 30%"></div>
+                </div>
+              </div>
+              <div class="mb-4">
+                <p class="mb-1">Set up the color palette</p>
+                <div class="progress" style="height: 2px;">
+                  <div class="progress-bar bg-warning" style="width: 70%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="d-flex justify-content-between mb-1">
+                  <p class="mb-0">Wireframe and prototype</p>
+                  <span>6:50</span>
+                </div>
+                <div class="progress" style="height: 2px;">
+                  <div class="progress-bar bg-warning" style="width: 90%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image en avant-plan -->
+          <div class="position-relative top-0 start-50 w-100 z-1 mb-5">
+            <div class="rounded-4 overflow-hidden shadow">
+              <img loading="lazy" src="assets/images/img_01.jpg" class="img-fluid w-100" alt="Team presentation">
+              <button class="btn btn-light position-absolute top-0 end-0 m-2 rounded-3 align-items-center">
+                Play video <i class="bi bi-play-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="features-1-text col-12 col-md-6">
+        <span class="py-2 px-3 badge rounded-pill text-bg-warning text-white mb-4">Tools</span>
+        <h2 class="text-dark py-0 my-0 display-6 fw-medium mb-4">We build for designers and developers</h2>
+        <p class="text-dark py-0 my-0 max-w-md text-muted">Get components and examples, including tons of variables that
+          will help you grow your business. </p>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Features 2 -->
+
+  <section id="features-2" class="features-2 container py-5">
+    <div class="row h-100 align-items-center flex-md-row-reverse">
+      <div class="col-12 col-md-6 order-1 order-md-2">
+
+        <span class="py-2 px-3 badge rounded-pill text-bg-success text-white mb-4">Features</span>
+        <h2 class="text-dark py-0 my-0 display-6 fw-medium mb-4">Get components and examples, including tons of
+          variables that will help you grow your business.</h2>
+        <ul class="list-unstyled">
+          <li class="d-flex align-items-center mb-3">
+            <i class="bi bi-check-square-fill text-success me-2 fs-5"></i>
+            <p class="text-success fw-medium mb-0">Perfect for modern startups</p>
+          </li>
+          <li class="d-flex align-items-center">
+            <i class="bi bi-check-square-fill text-success me-2 fs-5"></i>
+            <p class="text-success fw-medium mb-0">Fully customizable and scalable</p>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="col-12 col-md-6 position-relative">
+        <svg class="connector position-absolute z-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 497.63 432.15">
+          <defs>
+            <style>
+              .cls-8,
+              .cls-9 {
+                fill: none;
+                stroke: #c2c2c2;
+                stroke-miterlimit: 10;
+                stroke-width: 10px;
+              }
+
+              .cls-9 {
+                stroke-dasharray: 30.67 30.67;
+              }
+            </style>
+          </defs>
+          <path class="cls-8" d="M4.62,1.92c1.81,4.35,3.77,8.95,5.9,13.79" />
+          <path class="cls-9"
+            d="M23.47,43.5c29.91,60.8,81.51,144.23,168.02,221.52,101.98,91.11,207.83,133.78,275.67,154.17" />
+          <path class="cls-8" d="M481.9,423.44c5.12,1.42,9.96,2.7,14.49,3.86" />
+        </svg>
+
+        <div class="col position-relative overflow-hidden shadow w-100 rounded-4 order-2 order-md-1 mb-5 mb-md-0">
+          <img loading="lazy" src="assets/images/img_02.jpg" class="img-fluid w-100" alt="Team presentation">
+          <button class="btn btn-light position-absolute top-0 start-0 m-2 rounded-3">
+            Play video <i class="bi bi-play-fill"></i>
+          </button>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+  <!-- Features 3 -->
+
+  <section id="features-3" class="features-3 container py-5">
+    <div class="row h-100 align-items-center">
+      <div class="col-12 col-md-6 pb-5 pb-md-0">
+
+        <div class="row align-items-center">
+          <div class="col-6">
+
+            <div class="jimmy card rounded-4 my-2">
+              <img loading="lazy" src="assets/images/person_03.jpg" class="card-img-top rounded-top-4" alt="...">
+              <div class="card-body d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <div
+                    class="d-none d-md-block initials rounded-circle bg-warning text-white fw-bold d-flex justify-content-center align-items-center">
+                    JH
+                  </div>
+                  <p class="card-text mb-0 ms-md-3">Jimmy Hendrix</p>
+                </div>
+
+                <svg viewBox="0 0 24 24" width="25px" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M12 5.50063C7.50016 0.825464 2 4.27416 2 9.1371C2 14 6.01943 16.5914 8.96173 18.9109C10 19.7294 11 20.5 12 20.5"
+                      stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
+                    <path opacity="0.5"
+                      d="M12 5.50063C16.4998 0.825464 22 4.27416 22 9.1371C22 14 17.9806 16.5914 15.0383 18.9109C14 19.7294 13 20.5 12 20.5"
+                      stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
+                  </g>
+                </svg>
+              </div>
+
+            </div>
+
+            <div class="card rounded-4 my-2 bg-transparent">
+              <div class="card-body d-md-flex align-items-center">
+                <i class="bi bi-check-circle-fill text-success display-6"></i>
+                <div class="ms-md-4  pt-2 pt-md-0">
+                  <p class="text-dark fw-medium mb-0 fw-bold">300+ components</p>
+                  <p class="text-dark fw-medium mb-0">Built to be customized.</p>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col-6 position-relative">
+            <svg class="connector-second position-absolute z-1" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 497.63 432.15">
+              <defs>
+                <style>
+                  .cls-8,
+                  .cls-9 {
+                    fill: none;
+                    stroke: #c2c2c2;
+                    stroke-miterlimit: 10;
+                    stroke-width: 10px;
+                  }
+
+                  .cls-9 {
+                    stroke-dasharray: 30.67 30.67;
+                  }
+                </style>
+              </defs>
+              <path class="cls-8" d="M4.62,1.92c1.81,4.35,3.77,8.95,5.9,13.79" />
+              <path class="cls-9"
+                d="M23.47,43.5c29.91,60.8,81.51,144.23,168.02,221.52,101.98,91.11,207.83,133.78,275.67,154.17" />
+              <path class="cls-8" d="M481.9,423.44c5.12,1.42,9.96,2.7,14.49,3.86" />
+            </svg>
+            <div class="card rounded-4 my-2">
+              <div class="card-body align-items-center text-center">
+                <img loading="lazy" src="assets/images/logos/airbnb.svg" class="my-4" alt="Odoo" height="32">
+
+                <div class="d-flex justify-content-center py-2">
+                  <i class="bi bi-star text-warning"></i>
+                  <i class="bi bi-star text-warning"></i>
+                  <i class="bi bi-star text-warning"></i>
+                  <i class="bi bi-star text-warning"></i>
+                  <i class="bi bi-star text-secondary"></i>
+                </div>
+                <div class="py-4">
+                  <p class="fw-bold p-0 m-0">4.95 out of 5 stars</p>
+                  <p class="p-0 m-0">from 23 reviews</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="card rounded-4 my-2">
+              <div class="card-body align-items-center text-center">
+                <img loading="lazy" src="assets/images/logos/company_01.png" class="my-4 rounded-circle" alt="Odoo" height="62">
+
+                <div class="d-flex justify-content-center py-2">
+                  <p class="p-0 m-0 fs-5 fw-bold">Website UI Kit</p>
+                </div>
+                <div class="py-4 container">
+                  <div class="d-flex justify-content-center">
+                    <img loading="lazy" src="assets/images/person_01.jpg" class="rounded-circle border border-white avatar-stack"
+                      alt="Avatar 1">
+                    <img loading="lazy" src="assets/images/person_02.jpg" class="rounded-circle border border-white avatar-stack"
+                      alt="Avatar 2">
+                    <img loading="lazy" src="assets/images/person_03.jpg" class="rounded-circle border border-white avatar-stack"
+                      alt="Avatar 3">
+                  </div>
+
+                </div>
+
+                <div class="gradient-divider mb-3"></div>
+
+                <div class="d-flex justify-content-center gap-3 gap-md-5">
+                  <i class="bi bi-paperclip fs-4 text-secondary"></i>
+                  <i class="bi bi-eye fs-4 text-secondary"></i>
+                  <i class="bi bi-heart fs-4 text-secondary"></i>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-12 col-md-6">
+        <span class="py-2 px-3 badge rounded-pill text-bg-primary text-white mb-4">Technology</span>
+        <h2 class="text-dark py-0 my-0 display-6 fw-medium mb-4">We use the latest technologies on the market</h2>
+        <p class="text-dark py-0 my-0  text-muted max-w-md mb-4">Get components and examples, including tons of
+          variables
+          that will help you grow your business. </p>
+        <a href="" class="underlined">See case studies</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features 4 -->
+
+  <section id="features-4" class="features-2 container py-5">
+    <div class="row h-100 align-items-center flex-md-row-reverse">
+      <div class="col-12 col-md-6 order-1 order-md-2">
+
+        <span class="py-2 px-3 badge rounded-pill text-bg-success text-white mb-4">Easy to install</span>
+        <h2 class="text-dark py-0 my-0 display-6 fw-medium mb-4">Download, install and run. </h2>
+        <p class="text-dark py-0 my-0  text-muted max-w-md mb-4">Get components and examples, including tons of
+          variables
+          that will help you grow your business. </p>
+
+        <div class="d-flex flex-wrap gap-3 pt-0 pt-md-4 pb-5 pb-md-0">
+          <!-- App Store -->
+          <a href="#appstore" class="btn btn-dark d-flex align-items-center rounded-3 px-4 py-2">
+            <i class="bi bi-apple fs-md-3 me-3"></i>
+            <div class="text-start">
+              <div class="small text-xs">Download on the</div>
+              <div class="fw-bold">App Store</div>
+            </div>
+          </a>
+
+          <!-- Google Play -->
+          <a href="#playstore" class="btn btn-dark d-flex align-items-center rounded-3 px-4 py-2">
+            <i class="bi bi-google-play fs-md-3 me-3"></i>
+            <div class="text-start">
+              <div class="small text-xs">Download on the</div>
+              <div class="fw-bold">Google Play</div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="col-12 col-md-6 position-relative">
+        <svg class="connector position-absolute z-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 497.63 432.15">
+          <defs>
+            <style>
+              .cls-8,
+              .cls-9 {
+                fill: none;
+                stroke: #c2c2c2;
+                stroke-miterlimit: 10;
+                stroke-width: 10px;
+              }
+
+              .cls-9 {
+                stroke-dasharray: 30.67 30.67;
+              }
+            </style>
+          </defs>
+          <path class="cls-8" d="M4.62,1.92c1.81,4.35,3.77,8.95,5.9,13.79" />
+          <path class="cls-9"
+            d="M23.47,43.5c29.91,60.8,81.51,144.23,168.02,221.52,101.98,91.11,207.83,133.78,275.67,154.17" />
+          <path class="cls-8" d="M481.9,423.44c5.12,1.42,9.96,2.7,14.49,3.86" />
+        </svg>
+
+        <!-- Image en avant-plan -->
+        <div class="rounded-4 overflow-hidden shadow w-100 position-relative order-2 order-md-1 mb-5 mb-md-0">
+          <img loading="lazy" src="assets/images/img_03.jpg" class="img-fluid w-100" alt="Team presentation">
+          <button class="btn btn-light position-absolute top-0 start-0 m-2 rounded-3 align-items-center">
+            Play video <i class="bi bi-play-fill"></i>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+  <!-- SVG + CTA -->
+
+  <!-- Wrapper positionné -->
+  <div class="position-relative">
+    <!-- SVG collé en haut de la section, centré -->
+    <svg id="Calque_1" class="connector-cta position-absolute z-1" data-name="Calque 1"
+      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252.34 296.85">
+      <defs>
+        <style>
+          .cls-8,
+          .cls-9 {
+            fill: none;
+            stroke: #C2C2C2;
+            stroke-miterlimit: 10;
+            stroke-width: 10px;
+          }
+
+          .cls-9 {
+            stroke-dasharray: 28.65 28.65;
+          }
+        </style>
+      </defs>
+      <path class="cls-8" d="M4.95.67c.56,4.14,1.31,9.12,2.34,14.81" />
+      <path class="cls-9" d="M13.51,43.45c10.35,39.13,31.68,93.16,76.64,144.29,45.88,52.17,97.56,79.93,133.11,94.41" />
+      <path class="cls-8" d="M236.63,287.29c5.35,1.93,10.13,3.51,14.21,4.79" />
+    </svg>
+
+    <!-- Ta section CTA -->
+    <section id="cta" class="cta container align-items-center">
+      <div class="row align-items-center text-white">
+        <div class="col-12 col-md-6">
+          <h3 class="fw-bold">Infinite solutions</h3>
+          <p class="max-w-md">
+            Intuitive markup, powerful and lightning-fast build tools, everything you need to turn your ideas into
+            incredible products.
+          </p>
+        </div>
+        <div class="col-12 col-md-6 d-flex justify-content-md-end">
+          <a href="#" class="btn bg-white text-dark align-items-center">
+            Learn more <i class="bi bi-arrow-right-short"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Awards -->
+
+  <section id="awards" class="awards">
+    <div class="container">
+      <span class="py-2 px-3 badge rounded-pill text-bg-info text-white mb-4">Awards</span>
+      <h3 class="fs-5 fw-bold">Awards for design, creativity, and innovation on the Internet</h3>
+
+      <div class="awards-card-container pt-5">
+        <div class="row justify-content-between g-4 overflow-auto">
+          <div class="d-flex flex-nowrap gap-4 py-5">
+
+            <!-- Airbnb -->
+            <div class="col-12 col-sm-6 col-md-2">
+              <a href="#">
+                <div class="card text-center rounded-4 shadow-sm border-0 px-3 py-4 cursor-pointer">
+                  <div class="card-body d-flex flex-column align-items-center">
+                    <img loading="lazy" src="assets/images/logos/airbnb.svg" class="mb-4" alt="Airbnb logo" height="32">
+
+                    <div class="d-flex justify-content-center py-2">
+                      <i class="bi bi-star text-warning me-1"></i>
+                      <i class="bi bi-star text-warning me-1"></i>
+                      <i class="bi bi-star text-warning me-1"></i>
+                      <i class="bi bi-star text-warning me-1"></i>
+                      <i class="bi bi-star text-secondary"></i>
+                    </div>
+                    <p class="fw-bold mb-0 fw-bold pt-4">4.95 out of 5 stars</p>
+                    <p class="text-muted small m-0">from 23 reviews</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Amazon -->
+            <div class="col-12 col-sm-6 col-md-2 up">
+              <a href="#">
+                <div class="card text-center rounded-4 shadow-sm border-0 px-3 py-4 cursor-pointer">
+                  <div class="card-body d-flex flex-column align-items-center">
+                    <img loading="lazy" src="assets/images/logos/amazon.svg" class="mb-4" alt="Amazon logo" height="32">
+                    <p class="text-muted mb-4">They build modern looking websites easily using Tabs.</p>
+                    <a href="#" class="text-primary fw-medium"><span class="underlined">Learn more</span></a>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Slack -->
+            <div class="col-12 col-sm-6 col-md-2">
+              <a href="#">
+                <div class="card text-center rounded-4 shadow-sm border-0 px-3 py-4 cursor-pointer">
+                  <div class="card-body d-flex flex-column align-items-center">
+                    <img loading="lazy" src="assets/images/logos/slack.svg" class="mb-4" alt="Slack logo" height="32">
+                    <p class="text-muted mb-4">They build modern looking websites easily using Trello.</p>
+                    <a href="#" class="text-primary fw-medium"><span class="underlined">Learn more</span></a>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Spotify -->
+            <div class="col-12 col-sm-6 col-md-2 up">
+              <a href="#">
+                <div class="card text-center rounded-4 shadow-sm border-0 px-3 py-4 cursor-pointer">
+                  <div class="card-body d-flex flex-column align-items-center">
+                    <img loading="lazy" src="assets/images/logos/spotify.svg" class="mb-4" alt="Spotify logo" height="32">
+                    <div class="d-flex justify-content-center mb-2">
+                      <i class="bi bi-star text-warning me-1"></i>
+                      <i class="bi bi-star text-warning me-1"></i>
+                      <i class="bi bi-star text-warning me-1"></i>
+                      <i class="bi bi-star text-warning me-1"></i>
+                      <i class="bi bi-star text-secondary"></i>
+                    </div>
+                    <p class="text-muted mb-2 fw-bold">4.95 out of 5 stars</p>
+                    <p class="text-muted small m-0">from 23 reviews</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- PayPal -->
+            <div class="col-12 col-sm-6 col-md-2">
+              <a href="#">
+                <div class="card text-center rounded-4 shadow-sm border-0 px-3 py-4 cursor-pointer">
+                  <div class="card-body d-flex flex-column align-items-center">
+                    <img loading="lazy" src="assets/images/logos/paypal.svg" class="mb-4" alt="PayPal logo" height="32">
+                    <p class="text-muted mb-4">They build modern looking websites easily using Docker.</p>
+                    <a href="#" class="text-primary fw-medium"><span class="underlined">Learn more</span></a>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SVG -->
+
+  <?xml version="1.0" encoding="UTF-8"?>
+  <svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 187.52">
+    <defs>
+      <style>
+        .cls-5 {
+          fill: #f2f2f2;
+        }
+      </style>
+    </defs>
+    <polyline class="cls-5" points="1920 0 1920 23.91 0 187.52 0 0" />
+  </svg>
+
+  <!-- Faq -->
+
+  <section id="faq" class="faq py-5 container">
+    <div class="title text-center mb-5">
+      <h3 class="fw-bold">Helpful answers</h3>
+      <p class="text-muted">Start building fast, beautiful, and modern-looking websites in no time.</p>
+    </div>
+    <div class="content">
+      <div class="row">
+        <div class="col-12 col-md-6">
+
+          <!-- FAQ 1 -->
+          <div class="accordion-item border shadow-sm rounded-4 mb-3 my-2">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed d-flex align-items-center bg-white rounded-4 py-3 px-4"
+                type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                <!-- Bloc gauche -->
+                <div class="d-flex align-items-center gap-3 flex-grow-1">
+                  <i class="bi bi-file-earmark-text text-primary"></i>
+                  <span class="fw-semibold text-dark">Which license do I need?</span>
+                </div>
+
+                <!-- Icône droite -->
+                <i class="bi bi-plus toggle-icon text-muted fs-5"></i>
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse">
+              <div class="accordion-body px-4 py-3">
+                You may need a standard or extended license depending on your project. Please review our licensing
+                terms.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="accordion-item border shadow-sm rounded-4 mb-3 my-2">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed d-flex align-items-center bg-white rounded-4 py-3 px-4"
+                type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                <!-- Bloc gauche -->
+                <div class="d-flex align-items-center gap-3 flex-grow-1">
+                  <i class="bi bi-lock text-primary"></i>
+                  <span class="fw-semibold text-dark">How do I get access to my database?</span>
+                </div>
+
+                <!-- Icône droite -->
+                <i class="bi bi-plus toggle-icon text-muted fs-5"></i>
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse">
+              <div class="accordion-body px-4 py-3">
+                You may need a standard or extended license depending on your project. Please review our licensing
+                terms.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="accordion-item border shadow-sm rounded-4 mb-3 my-2">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed d-flex align-items-center bg-white rounded-4 py-3 px-4"
+                type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                <!-- Bloc gauche -->
+                <div class="d-flex align-items-center gap-3 flex-grow-1">
+                  <i class="bi bi-folder text-primary"></i>
+                  <span class="fw-semibold text-dark">How do I see previous orders?</span>
+                </div>
+
+                <!-- Icône droite -->
+                <i class="bi bi-plus toggle-icon text-muted fs-5"></i>
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse">
+              <div class="accordion-body px-4 py-3">
+                You may need a standard or extended license depending on your project. Please review our licensing
+                terms.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Colonne de droite -->
+        <div class="col-12 col-md-6">
+
+          <!-- FAQ 4 -->
+          <div class="accordion-item border shadow-sm rounded-4 mb-3 my-2">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed d-flex align-items-center bg-white rounded-4 py-3 px-4"
+                type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                <!-- Bloc gauche -->
+                <div class="d-flex align-items-center gap-3 flex-grow-1">
+                  <i class="bi bi-file-earmark-text text-primary"></i>
+                  <span class="fw-semibold text-dark">Which license do I need?</span>
+                </div>
+
+                <!-- Icône droite -->
+                <i class="bi bi-plus toggle-icon text-muted fs-5"></i>
+              </button>
+            </h2>
+            <div id="faq4" class="accordion-collapse collapse">
+              <div class="accordion-body px-4 py-3">
+                Absolutely! You can upgrade or downgrade your plan at any time through your account settings.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="accordion-item border shadow-sm rounded-4 mb-3 my-2">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed d-flex align-items-center bg-white rounded-4 py-3 px-4"
+                type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                <!-- Bloc gauche -->
+                <div class="d-flex align-items-center gap-3 flex-grow-1">
+                  <i class="bi bi-lock text-primary"></i>
+                  <span class="fw-semibold text-dark">How do I get access to my database?</span>
+                </div>
+
+                <!-- Icône droite -->
+                <i class="bi bi-plus toggle-icon text-muted fs-5"></i>
+              </button>
+            </h2>
+            <div id="faq5" class="accordion-collapse collapse">
+              <div class="accordion-body px-4 py-3">
+                Yes, all plans include full access to our support team via email or chat.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="accordion-item border shadow-sm rounded-4 mb-3 my-2">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed d-flex align-items-center bg-white rounded-4 py-3 px-4"
+                type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                <!-- Bloc gauche -->
+                <div class="d-flex align-items-center gap-3 flex-grow-1">
+                  <i class="bi bi-folder text-primary"></i>
+                  <span class="fw-semibold text-dark">How do I see previous orders?</span>
+                </div>
+
+                <!-- Icône droite -->
+                <i class="bi bi-plus toggle-icon text-muted fs-5"></i>
+              </button>
+
+            </h2>
+            <div id="faq6" class="accordion-collapse collapse">
+              <div class="accordion-body px-4 py-3">
+                We accept all major credit cards, PayPal, and Apple Pay.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center my-5">
+      <p class="text-muted fs-5">I want to start a new project.</p>
+      <div class="d-flex align-items-center justify-content-center">
+        <button class="btn bg-primary text-white me-3">
+          Buy now <i class="bi bi-arrow-right-short"></i>
+        </button>
+        <a href="#" class="text-dark d-flex align-items-center py-2 px-3">
+          Learn more
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- SVG -->
+
+  <svg id="footer-shape" data-name="footer-shape" class="footer-shape" xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1920 187.52">
+    <defs>
+      <style>
+        .cls-2 {
+          fill: #171347;
+        }
+      </style>
+    </defs>
+    <polygon class="cls-2" points="0 163.61 1920 0 1920 187.52 0 187.52 0 163.61" />
+  </svg>
+
+  <!-- Footer -->
+
+  <footer>
+    <div class="container pt-5">
+      <div class="row pb-4">
+
+        <div class="col-12 col-md-6 text-white">
+          <h2>Brilliant solutions for your ideas</h2>
+          <p>Modern-looking websites.</p>
+        </div>
+
+        <div class="col-12 col-md-6 d-flex align-items-center justify-content-start justify-content-md-end">
+          <a class="btn bg-white text-dark me-2">
+            <i class="bi bi-journals text-primary me-2"></i>
+            Documentation
+          </a>
+          <a class="btn bg-primary text-white d-flex align-items-center">
+            Purchase now
+          </a>
+        </div>
+
+      </div>
+
+      <div class="gradient-divider mb-5"></div>
+
+      <div class="row pb-4">
+        <div class="col-12 col-md-6">
+          <img loading="lazy" src="assets/images/logos/odoo-white.svg" alt="Odoo" height="32">
+          <p class="text-white max-w-md pt-4">Odoo attempts to bring the best development experience to designers and
+            developers by offering the tools needed for having a quick and solid start in most web projects.</p>
+          <ul class="list-inline">
+            <li class="list-inline-item text-white me-3"><a href="#"><i class="bi bi-dribbble footer-icons"></i></a>
+            </li>
+            <li class="list-inline-item text-white me-3"><a href="#"></a><i class="bi bi-github footer-icons"></i></a>
+            </li>
+            <li class="list-inline-item text-white me-3"><a href="#"></a><i
+                class="bi bi-instagram footer-icons"></i></a></li>
+            <li class="list-inline-item text-white me-3"><a href="#"></a><i class="bi bi-facebook footer-icons"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-4 col-md-2">
+          <p class="text-white">Account</p>
+          <ul class="text-white list-inline">
+            <li class=""><a href="">Profile</a></li>
+            <li class=""><a href="">Settings</a></li>
+            <li class=""><a href="">Billing</a></li>
+            <li class=""><a href="">Notifications</a></li>
+          </ul>
+        </div>
+
+        <div class="col-4 col-md-2">
+          <p class="text-white">About</p>
+          <ul class="text-white list-inline">
+            <li class="list-inline-"><a href="">Services</a></li>
+            <li class=""><a href="">Pricing</a></li>
+            <li class=""><a href="">Contact</a></li>
+            <li class=""><a href="">Careers</a></li>
+          </ul>
+        </div>
+
+        <div class="col-4 col-md-2">
+          <p class="text-white">Company</p>
+          <ul class="text-white list-inline">
+            <li class=""><a href="">Community</a></li>
+            <li class=""><a href="">Help center</a></li>
+            <li class=""><a href="">Support</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="gradient-divider mb-5"></div>
+
+      <div class="d-flex justify-content-between">
+        <div>
+          <p class="text-white">© <strong>Odoo.</strong> All rights reserved</p>
+        </div>
+        <div>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="">Terms</a></li>
+            <li class="list-inline-item"><a href="">Privacy</a></li>
+            <li class="list-inline-item"><a href="">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- scripts -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

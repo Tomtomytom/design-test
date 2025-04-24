@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+.max-w-xs {
+  max-width: 20rem;
+}
+
+.max-w-sm {
+  max-width: 24rem;
+}
+
+.max-w-md {
+  max-width: 28rem;
+}
+
+.max-w-lg {
+  max-width: 32rem;
+}
+
+.max-w-xl {
+  max-width: 36rem;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
+}
+
+.max-w-3xl {
+  max-width: 48rem;
+}
+
+.max-w-4xl {
+  max-width: 56rem;
+}
+
+.max-w-5xl {
+  max-width: 64rem;
+}
+
+.max-w-6xl {
+  max-width: 72rem;
+}
+
+.max-w-7xl {
+  max-width: 80rem;
+}
+
+.max-w-full {
+  max-width: 100%;
+}
+
+.text-xs {
+  font-size: 0.75rem !important;
+}
+
+.text-sm {
+  font-size: 0.875rem !important;
+}
+
+.text-base {
+  font-size: 1rem !important;
+}
+
+.text-lg {
+  font-size: 1.125rem !important;
+}
+
+.text-xl {
+  font-size: 1.25rem !important;
+}
+
+.text-2xl {
+  font-size: 1.5rem !important;
+}
+
+.text-3xl {
+  font-size: 1.875rem !important;
+}
+
+.text-4xl {
+  font-size: 2.25rem !important;
+}
+
+.text-5xl {
+  font-size: 3rem !important;
+}
+
+@media (min-width: 640px) {
+  .sm\:text-xs {
+    font-size: 0.75rem !important;
+  }
+  .sm\:text-sm {
+    font-size: 0.875rem !important;
+  }
+  .sm\:text-base {
+    font-size: 1rem !important;
+  }
+  .sm\:text-lg {
+    font-size: 1.125rem !important;
+  }
+  .sm\:text-xl {
+    font-size: 1.25rem !important;
+  }
+  .sm\:text-2xl {
+    font-size: 1.5rem !important;
+  }
+  .sm\:text-3xl {
+    font-size: 1.875rem !important;
+  }
+  .sm\:text-4xl {
+    font-size: 2.25rem !important;
+  }
+  .sm\:text-5xl {
+    font-size: 3rem !important;
+  }
+}
+@media (min-width: 768px) {
+  .md\:text-xs {
+    font-size: 0.75rem !important;
+  }
+  .md\:text-sm {
+    font-size: 0.875rem !important;
+  }
+  .md\:text-base {
+    font-size: 1rem !important;
+  }
+  .md\:text-lg {
+    font-size: 1.125rem !important;
+  }
+  .md\:text-xl {
+    font-size: 1.25rem !important;
+  }
+  .md\:text-2xl {
+    font-size: 1.5rem !important;
+  }
+  .md\:text-3xl {
+    font-size: 1.875rem !important;
+  }
+  .md\:text-4xl {
+    font-size: 2.25rem !important;
+  }
+  .md\:text-5xl {
+    font-size: 3rem !important;
+  }
+}
+@media (min-width: 1024px) {
+  .lg\:text-xs {
+    font-size: 0.75rem !important;
+  }
+  .lg\:text-sm {
+    font-size: 0.875rem !important;
+  }
+  .lg\:text-base {
+    font-size: 1rem !important;
+  }
+  .lg\:text-lg {
+    font-size: 1.125rem !important;
+  }
+  .lg\:text-xl {
+    font-size: 1.25rem !important;
+  }
+  .lg\:text-2xl {
+    font-size: 1.5rem !important;
+  }
+  .lg\:text-3xl {
+    font-size: 1.875rem !important;
+  }
+  .lg\:text-4xl {
+    font-size: 2.25rem !important;
+  }
+  .lg\:text-5xl {
+    font-size: 3rem !important;
+  }
+}
+@media (min-width: 1280px) {
+  .xl\:text-xs {
+    font-size: 0.75rem !important;
+  }
+  .xl\:text-sm {
+    font-size: 0.875rem !important;
+  }
+  .xl\:text-base {
+    font-size: 1rem !important;
+  }
+  .xl\:text-lg {
+    font-size: 1.125rem !important;
+  }
+  .xl\:text-xl {
+    font-size: 1.25rem !important;
+  }
+  .xl\:text-2xl {
+    font-size: 1.5rem !important;
+  }
+  .xl\:text-3xl {
+    font-size: 1.875rem !important;
+  }
+  .xl\:text-4xl {
+    font-size: 2.25rem !important;
+  }
+  .xl\:text-5xl {
+    font-size: 3rem !important;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+a {
+  color: #038AFF;
+  text-decoration: none;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+nav img {
+  width: 100px;
+}
+
+.bg-navbar {
+  background-color: #038AFF;
+}
+
+.bg-darkblue {
+  background-color: #171347;
+}
+
+.border-graylight {
+  border-color: #e8e6e6 !important;
+}
+
+.text-graylight {
+  color: #e8e6e6 !important;
+}
+
+.dashed {
+  -webkit-text-decoration: underline dashed;
+          text-decoration: underline dashed;
+  text-underline-offset: 4px;
+}
+
+.underlined {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 2px;
+}
+
+.gradient-divider {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(to right, transparent, #ced4da, transparent);
+  opacity: 0.6;
+}
+
+.hero {
+  padding: 10rem 2rem 2rem;
+  background-color: #038AFF;
+  color: #fff;
+}
+.hero h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.card-manager {
+  border-radius: 10px 10px 80px 10px;
+}
+
+.avatar-stack {
+  width: 38px;
+  height: 38px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: -12px;
+  z-index: 1;
+}
+.avatar-stack:first-child {
+  margin-left: 0;
+}
+
+.initials {
+  width: 48px;
+  height: 48px;
+  font-size: 1rem;
+}
+
+.features-1,
+.features-2,
+.features-3,
+.features-4,
+.faq {
+  margin: 5rem auto;
+}
+
+.features-1 .features-1-text {
+  padding-top: 0;
+}
+
+.cta .row {
+  background-color: #171347;
+  border-radius: 0 50px 0 50px;
+  padding: 3rem;
+  color: #fff;
+  margin: 0;
+}
+
+.awards {
+  margin-top: 10rem;
+  padding-top: 3rem;
+  background-color: #f2f2f2;
+}
+.awards a {
+  text-decoration: none;
+}
+.awards .up {
+  transform: translateY(-60px);
+}
+.awards .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.awards .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.header-shape {
+  margin-top: -1px;
+}
+
+.footer-shape {
+  margin-bottom: -1px;
+}
+
+footer {
+  background-color: #171347;
+}
+footer a {
+  color: #b0b0b0;
+}
+
+.connector,
+.connector-second,
+.connector-cta {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .connector {
+    display: block;
+    top: -170px;
+    left: -200px;
+    width: 180px;
+    z-index: 1;
+  }
+  .connector-second {
+    display: block;
+    top: -160px;
+    left: 300px;
+    transform: rotate(270deg);
+    width: 180px;
+    z-index: 1;
+  }
+  .connector-cta {
+    display: block;
+    width: 100px;
+    left: 800px;
+    top: -120px;
+    transform: rotate(270deg);
+    z-index: 1;
+  }
+}
+@media (max-width: 640px) {
+  nav img {
+    width: 80px;
+  }
+  .features-1,
+  .features-2,
+  .features-3,
+  .features-4,
+  .faq {
+    margin: 1rem auto;
+  }
+  .hero {
+    padding: 10rem 1rem 5rem;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .hero .card-manager {
+    margin: 2rem 0 0;
+  }
+  .avatar-stack {
+    width: 32px;
+    height: 32px;
+    margin-left: -10px;
+  }
+  .cta .row {
+    padding: 2rem;
+    margin: 0 5px;
+  }
+  .awards {
+    margin-top: 6rem;
+    padding-top: 2rem;
+  }
+  .features-1 .features-1-text {
+    padding-top: 10rem;
+  }
+}/*# sourceMappingURL=style.css.map */
